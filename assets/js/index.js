@@ -15,9 +15,15 @@ function getUserInfo() {
       //   调用渲染函数
       renderAvatar(res.data);
     },
+
+    //5、控制用户的访问权限.  用户如果没有登录，是不能够允许用户访问后台主页.
+    // 不论成功还是失败，最终都会调用 complete 回调函数
+
+    // 移至baseAPI.js
   });
 }
-// 渲染用户信息
+
+// 二、渲染用户信息
 const renderAvatar = (user) => {
   const name = user.nickname || user.username;
   // 设置欢迎文本
