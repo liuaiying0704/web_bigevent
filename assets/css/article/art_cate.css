@@ -1,0 +1,27 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 15px;
+  background-color: #f2f3f5;
+}
+/* 2\ */
+.layui-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* 3 */
+#form-add {
+  padding-top: 20px;
+  padding-right: 30px;
+}
+/* 修改 form 表单样式 */
+#form-add,
+#form-edit {
+  padding-top: 20px;
+  padding-right: 30px;
+}
